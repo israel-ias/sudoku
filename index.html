@@ -1,0 +1,68 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sudoku</title>
+        <style>
+            .tbResult tr td{
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                border-top: 1px solid #555;
+                border-left: 1px solid #555;
+            }
+            .tbResult input{
+                border: none;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                margin: 0;
+                text-align:center;
+            }
+            .tbResult tr td:last-child{
+                border-right: 2px solid #555;
+            }
+            .tbResult tr td:first-child{
+                border-left: 2px solid #555;
+            }
+            .tbResult tr:last-child td{
+                border-bottom: 2px solid #555;
+            }
+            .tbResult tr:first-child td{
+                border-top: 2px solid #555;
+            }
+            .tbResult tr td:nth-child(3n+0){
+                border-right: 2px solid #555;
+            }
+            .tbResult tr:nth-child(3n+0) td{
+                border-bottom: 2px solid #555;
+            }
+            button{
+                margin:20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+        <h1>Sudoku</h1>
+        <table class="tbResult" cellspacing="0" cellpadding="0">
+            <tr v-for="row in board">
+                <td v-for="cel in row"><input type="text" :value="cel"></td>
+            </tr>
+        </table>
+        <button v-on:click="solveBoard">Solve</button>
+
+        <table cellspacing="0" cellpadding="0" class="tbResult" v-if="sovedBoard">
+            <tr v-for="row in sovedBoard">
+                <td v-for="cel in row">{{cel}}</td>
+            </tr>
+        </table>
+        <p v-if="iteration > 0">{{ iteration }}</p>
+    </div>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="sudoku.js"></script>
+
+    </body>
+    </html>

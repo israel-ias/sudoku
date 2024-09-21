@@ -1,0 +1,7 @@
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\ias\Fun\Sudoku\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
